@@ -80,7 +80,8 @@ pip instal -r ./finetune/requirements.txt
 
 ## Визуальное сравнение результатов дообучения
 
-`PROMPT`
+`PROMPT` <br>
+
 `top, Lacoste Big Elephant Print Sweatshirt Green, a photography of a green sweatshirt with elephant on it`
 
 -  **Stable Diffusion v 1-4 Finetuned** <br>
@@ -99,24 +100,24 @@ pip instal -r ./finetune/requirements.txt
 ![Examples_dataset](./images_output/images_SDXL_lora_elephant.png)
 
 
-`PROMPT`
+`PROMPT` <br>
 
-`top, Lacoste Big Elephant Print Sweatshirt Green, a photography of a green sweatshirt with elephant on it`
+`bottom, IAB Studio x Stussy Green palms print Pink Shorts, a photography of Pink pants with a green palms print`
 
 -  **Stable Diffusion v 1-4 Finetuned** <br>
-![Examples_dataset](./images_output/images_ft_sd-1-4_elephant.png)
+![Examples_dataset](./images_output/images_ft_sd-1-4_shorts.png)
 
 -  **Stable Diffusion v 1-4 LoRA** <br>
-![Examples_dataset](./images_output/images_ft_sd-1-4_elephant.png)
+![Examples_dataset](./images_output/images_lora_sd-1-4_shorts.png)
 
 -  **Stable Diffusion v 2-1 Finetuned** <br>
-![Examples_dataset](./images_output/images_ft_sd-1-4_elephant.png)
+![Examples_dataset](./images_output/images_ft_sd-2-1_shorts.png)
 
 -  **Stable Diffusion v 2-1 LoRA** <br>
-![Examples_dataset](./images_output/images_ft_sd-1-4_elephant.png)
+![Examples_dataset](./images_output/images_lora_sd-2-1-shorts.png)
 
 -  **Stable Diffusion XL v 1.0 LoRA** <br>
-![Examples_dataset](./images_output/images_ft_sd-1-4_elephant.png)
+![Examples_dataset](./images_output/images_SDXL_lora_shorts.png)
 
 
 ## Gradio WebUI
