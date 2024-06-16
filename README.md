@@ -32,35 +32,35 @@ pip instal -r ./finetune/requirements.txt
 
 **Были проведены экcперименты по дообучении следующих моделей:**
 
--  Stable Diffusion v 1-4 Finetuned <br>
+-  **Stable Diffusion v 1-4 Finetuned** <br>
     Запуск скрипта для дообучения:
 
 ```
 ./finetune/run_sd_1_4.sh
 ```
 
--  Stable Diffusion v 1-4 LoRA <br>
+-  **Stable Diffusion v 1-4 LoRA** <br>
    Запуск скрипта для дообучения:
 
 ```
 ./finetune/run_sd_lora_1_4.sh
 ```
 
--  Stable Diffusion v 2-1 Finetuned <br>
+-  **Stable Diffusion v 2-1 Finetuned** <br>
    Запуск скрипта для дообучения:
 
 ```
 ./finetune/run_sd_2_1.sh
 ```
 
--  Stable Diffusion v 2-1 LoRA <br>
+-  **Stable Diffusion v 2-1 LoRA** <br>
    Запуск скрипта для дообучения:
 
 ```
 ./finetune/run_sd_lora_2_1.sh
 ```
 
--  Stable Diffusion XL v 1.0 LoRA <br>
+-  **Stable Diffusion XL v 1.0 LoRA** <br>
    Запуск скрипта для дообучения:
 
 ```
@@ -69,17 +69,54 @@ pip instal -r ./finetune/requirements.txt
 
 **Убедитесь, что у вас есть учетная запись Hugging Face и wandb. Вам следует создать каталог и персональные токены для Hugging Face. Также, пожалуйста, проверьте свои персональные API-ключи для wandb.**
 
-## Сравнение результатов дообучения
-
-
-
-## Inference и сравнение результатов моделей
+## Inference
 
 Примеры инференса дообученных моделей и сравнение результатов можно найти в jupyter ноутбуках в папке [Notebooks_inference_examples](./Notebooks_inference_examples) <br>
 Изображения с результатами генерации модных экземпляров с использованием разных моделей с одни м тем же промтом для сравнительного анализа сохранены в папке [images_output](./images_output) <br>
 
 Наилучший результат по визуальным качествам получен с помощью модели *Stable Diffusion XL v 1.0 LoRA* (однако требуется более 10GB GPU RAM для инференса)
 Второй по качеству результат показала модель *Stable Diffusion v 1-4 Finetuned*  
+
+
+## Визуальное сравнение результатов дообучения
+
+`PROMPT`
+`top, Lacoste Big Elephant Print Sweatshirt Green, a photography of a green sweatshirt with elephant on it`
+
+-  **Stable Diffusion v 1-4 Finetuned** <br>
+![Examples_dataset](./images_output/images_ft_sd-1-4_elephant.png)
+
+-  **Stable Diffusion v 1-4 LoRA** <br>
+![Examples_dataset](./images_output/images_lora_sd-1-4_elefant.png)
+
+-  **Stable Diffusion v 2-1 Finetuned** <br>
+![Examples_dataset](./images_output/images_ft_sd-2-1_elefant.png)
+
+-  **Stable Diffusion v 2-1 LoRA** <br>
+![Examples_dataset](./images_output/images_lora_sd-2-1-elefant.png)
+
+-  **Stable Diffusion XL v 1.0 LoRA** <br>
+![Examples_dataset](./images_output/images_SDXL_lora_elephant.png)
+
+
+`PROMPT`
+`top, Lacoste Big Elephant Print Sweatshirt Green, a photography of a green sweatshirt with elephant on it`
+
+-  **Stable Diffusion v 1-4 Finetuned** <br>
+![Examples_dataset](./images_output/images_ft_sd-1-4_elephant.png)
+
+-  **Stable Diffusion v 1-4 LoRA** <br>
+![Examples_dataset](./images_output/images_ft_sd-1-4_elephant.png)
+
+-  **Stable Diffusion v 2-1 Finetuned** <br>
+![Examples_dataset](./images_output/images_ft_sd-1-4_elephant.png)
+
+-  **Stable Diffusion v 2-1 LoRA** <br>
+![Examples_dataset](./images_output/images_ft_sd-1-4_elephant.png)
+
+-  **Stable Diffusion XL v 1.0 LoRA** <br>
+![Examples_dataset](./images_output/images_ft_sd-1-4_elephant.png)
+
 
 ## Gradio WebUI
 
@@ -100,7 +137,7 @@ Gradio Web UI  *Stable Diffusion v 1-4 Finetuned* из Google Colab исполь
 python ./Gradio_Web_UI/app_gradio_sd_xl_lora.py
 ```
 
-Gradio Web UI  * Stable Diffusion XL v 1.0 LoRA* из Google Colab используйте [Colab Notebook](./Gradio_Web_UI/gradio_SDXL_LORA.ipynb)
+Gradio Web UI  *Stable Diffusion XL v 1.0 LoRA* из Google Colab используйте [Colab Notebook](./Gradio_Web_UI/gradio_SDXL_LORA.ipynb)
 
 ## Полезные ссылки
 
