@@ -100,6 +100,7 @@ pip instal -r ./finetune/requirements.txt
 
 
 `PROMPT`
+
 `top, Lacoste Big Elephant Print Sweatshirt Green, a photography of a green sweatshirt with elephant on it`
 
 -  **Stable Diffusion v 1-4 Finetuned** <br>
