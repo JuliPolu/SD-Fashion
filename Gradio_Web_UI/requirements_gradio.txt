@@ -1,0 +1,7 @@
+gradio
+diffusers
+transformers
+torch
+gradio
+safetensors
+peft
